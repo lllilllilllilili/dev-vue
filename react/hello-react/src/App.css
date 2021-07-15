@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -35,4 +36,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  outline-color: #00a1ff;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #eee;
+  cursor: pointer;
+  transition: all 0.2s;
 }
