@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import ScrollBox from './ScrollBox';
+import { useRef } from 'react';
 
-function App() {
+const App = () => {
+  const scrollBoxRef = useRef();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ScrollBox ref={scrollBoxRef}></ScrollBox>
+      <button onClick={() => scrollBoxRef.current.scrolltoEnd()}>맨 밑으로</button>
     </div>
   );
 }
